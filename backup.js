@@ -1,9 +1,3 @@
-const express = require('express');
-const { addToWatchList } = require('./controllers/items/index.js');
-const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const app = express();
-
 const port = 3001;
 const uri = "mongodb+srv://shraman1:Shraman123@cluster0.6iq3qcf.mongodb.net/wallet?retryWrites=true&w=majority&appName=Cluster0";
 app.use(express.json());
