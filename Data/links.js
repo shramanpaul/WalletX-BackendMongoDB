@@ -11,4 +11,12 @@ module.exports.links = {
     'NVDA': 'https://in.tradingview.com/symbols/NASDAQ-NVDA/',
     'BTCUSDT': 'https://in.tradingview.com/symbols/BTCUSD/',
     'ETHUSDT': 'https://in.tradingview.com/symbols/ETHUSD/',
+    'DOGEUSDT': 'https://in.tradingview.com/symbols/DOGEUSDT/',
+    'MATICUSDT': 'https://in.tradingview.com/symbols/MATICUSDT/',
+    'XRPUSDT': 'https://in.tradingview.com/symbols/XRPUSDT/',
+    'BNBUSDT': 'https://in.tradingview.com/symbols/BNBUSDT/',
+    'LINAUSDT': 'https://in.tradingview.com/symbols/LINAUSDT/',
+    'LINKUSDT': 'https://in.tradingview.com/symbols/LINKUSDT/',
+    'LUNAUSDT': 'https://in.tradingview.com/symbols/LUNAUSDT/',
+    'ROSEUSDT': 'https://in.tradingview.com/symbols/ROSEUSDT/',
 }

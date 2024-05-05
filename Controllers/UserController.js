@@ -43,4 +43,3 @@ module.exports.createUser = async(req, resp) => {
         resp.status(500).send({errors});
     }
 };
-
