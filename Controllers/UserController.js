@@ -77,6 +77,12 @@ module.exports.loginUser = async (req, resp) => {
                     secure: false, // set to true if your using https
                     sameSite: "none",
                 });// Set the cookie
+                resp.cookie('username', username, {
+                    httpOnly: true,
+                    maxAge: maxAge * 1000,
+                    secure: false, // set to true if your using https
+                    sameSite: "none",
+                })
                 resp.status(200).send({user: user._id, token: token});
             }else{
                 throw new Error('Invalid password');
