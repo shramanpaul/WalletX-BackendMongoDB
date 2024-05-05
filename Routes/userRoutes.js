@@ -1,12 +1,14 @@
 const {Router} = require('express')
 const router = Router();
-const UserController = require('../Controllers/UserController')
-const ItemController = require('../Controllers/ItemController')
+const UserController = require('../Controllers/UserController');
+const { verifyUser } = require('../MiddleWares/Auth');
 
-router.get('/users', UserController.getAllUsers);
+router.get('/users', verifyUser, UserController.getAllUsers);
 
 router.post('/signup', UserController.createUser);
 
-router.post('/watchlist',ItemController.addToWatchList);
+router.post('/login', UserController.loginUser);
+
+router.get('/logout', UserController.logOutUser)
 
 module.exports = router;
