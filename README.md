@@ -1,1 +1,3 @@
 # WalletX-BackendMongoDB
+git clone ...
+runs on localhost:3001
