@@ -103,5 +103,11 @@ module.exports.logOutUser = (req, resp) => {
         secure: false, // set to true if your using https`
         sameSite: "none",
     });   //negative maxAge so that the cookie expires immediately
+    resp.cookie('username', "", {
+        httpOnly: true,
+        maxAge: -1,
+        secure: false, // set to true if your using https`
+        sameSite: "none",
+    });   //negative maxAge so that the cookie expires immediately
     resp.send('User logged out successfully')
 }

@@ -1,12 +1,10 @@
 const AssetLink = require('../Data/links');
-const express = require('express');
-const User = require('../Models/User');
 const Watchlist = require('../Models/Watchlist');
 
 module.exports.addToWatchList = async (req, resp) => {
     try {
         const { asset_name, asset_id } = req.body;
-       const username="shinchan_nuhara"
+        // const username = req.cookies.username;
         console.log("asset id", asset_id);
         console.log("asset name", asset_name);
         const asset_info = AssetLink.links[asset_id];
